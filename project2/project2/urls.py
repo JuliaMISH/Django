@@ -15,10 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.views.generic import RedirectView
+#from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('pages/', include('django.contrib.flatpages.urls')),
-    path('', RedirectView.as_view(url='/admin/', permanent=True)),
+    #path('', RedirectView.as_view(url='/news/', permanent=True)),
+    path('news/', include('newapp.urls')),
+    #path('accounts/login/', RedirectView.as_view(url='/admin/', permanent=True)),
+    path('sign/', include('sign.urls')),
+    path('', include('protect.urls')),
+    path('appointments/', include(('appointment.urls', 'appointments'), namespace='appointments')),
+    path('accounts/', include('allauth.urls')),
+    path('tyt/', include(('testytest.urls', 'tyt'), namespace='tyt')),
+    path('blog/', include(('blog.urls', 'blog'), namespace='blog')),
 ]

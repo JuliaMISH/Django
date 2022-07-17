@@ -1,0 +1,21 @@
+{% extends 'testytest/base.html' %}
+
+{% block content %}
+All our products are:
+{% for i in object_list %}
+<li>Product: {{ i.title }} | Price: {{i.price }} <a href="{{i.get_absolute_url}}"> {% csrf_token %} Detail</a></li>
+{% endfor %}
+
+{% endblock %}
+
+{% block content_home %}
+
+{% endblock %}
+
+{% block content_about %}
+
+{% endblock %}
+
+{% block content_contact %}
+
+{% endblock %}

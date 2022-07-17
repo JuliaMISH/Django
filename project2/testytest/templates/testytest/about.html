@@ -1,0 +1,37 @@
+{% extends "testytest/base.html" %}
+
+{% block content_about %}
+<h1>About</h1>
+
+<p>
+    {{ my_text }}
+</p>
+
+<p>
+    {{ my_list }}
+</p>
+
+<ul>
+    <li>Item1</li>
+    <li>Item2</li>
+</ul>
+
+<ul>
+{% for i in my_list %}
+    {% if 90 > i and i > 20 %}
+        <li>{{forloop.counter}} - {{i|add:10}} : "10" added</li>
+    {% elif i == 100 %}
+        <li>{{forloop.counter}} - you hit 100 here!!!</li>
+    {% else %}
+        <li>{{forloop.counter}} - {{i}}</li>
+    {% endif %}
+
+{% endfor%}
+</ul>
+
+{% endblock %}
+
+
+
+
+

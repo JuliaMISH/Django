@@ -1,0 +1,11 @@
+{% extends 'testytest/base.html' %}
+
+{% block content %}
+Article template from temlates in the blog app
+
+{% for i in object_list %}
+<p> {{ i.id }} - <a href="{{ i.get_absolute_url }}"> {{ i.title }}</a></p>
+
+{% endfor %}
+{% endblock %}
+

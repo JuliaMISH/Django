@@ -1,0 +1,24 @@
+{% extends 'flatpages/default.html' %}
+
+<head>
+    <title>Subs</title>
+</head>
+
+{% block content %}
+<h3>Подпишись! Страница профиля {{request.user.username}}, id={{request.user.id}}</h3>
+<form method="POST">
+    {% csrf_token %}
+    {{ form }} <!-- Теперь нам нужна только готовая форма и кнопка -->
+    <input type="submit" value="Подписаться!">
+</form>
+
+<div>
+
+  You are following:
+  <ul>
+    {% for p in category.objects.all %}
+      <li>{{p}}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock content %}

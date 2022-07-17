@@ -10,9 +10,13 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         {% load static %}
+        
+
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
     </head>
     <body>
+        {% load cache %}
+        {% cache 600 header %}
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
            <div class="container">
@@ -26,18 +30,30 @@
                <div class="collapse navbar-collapse" id="navbarResponsive">
                    <ul class="navbar-nav ml-auto">
                        <li class="nav-item">
-                           <a class="nav-link" href="/page1/">Зарегистрированный пользователь</a>
-                       </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="/page2/">Страница с разными шрифтами</a>
-                       </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="/page3/">Контент повторяется два раза</a>
+<!--если ссылка начинается с "/", то она будет самостоятельной, если без этого слэша, то она приклеется к той, где нажата кнопка перехода-->
+                           <a class="nav-link" href="/news/">1. Посты</a>
+                       <li class="nav-item">
+                           <a class="nav-link" href="/news/search/">2. Поиск постов</a>
+                       <li class="nav-item">
+                           <a class="nav-link" href="/news/add/">3. Создать пост</a>
+                       <li class="nav-item">
+                           <a class="nav-link" href="/news/profile/">4. Профиль</a>
+                       <li class="nav-item">
+                           <a class="nav-link" href="/appointments/make_appointment/">5. Запись</a>
+                       <li class="nav-item">
+                           <a class="nav-link" href="http://127.0.0.1:8000/">6. Выйти</a>
+                       <li class="nav-item">
+                           <a class="nav-link" href="/tyt/about/">About</a>
+                       <li class="nav-item">
+                           <a class="nav-link" href="/tyt/contact/">Contact</a>
+                       <li class="nav-item">
+                           <a class="nav-link" href="/tyt/home/">Home</a>
                        </li>
                    </ul>
                </div>
            </div>
         </nav>
+        {% endcache %}
         <!-- Page content-->
         <div class="container">
            <div class="row">

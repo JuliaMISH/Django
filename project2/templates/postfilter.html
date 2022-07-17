@@ -1,0 +1,43 @@
+{% extends 'flatpages/default.html' %}
+
+{% load custom_filters %}
+{% block title %} Post Filter {% endblock title %}
+
+{% block content %}
+   <h1>Все посты</h1>
+
+<!-- Перед таблицей добавим форму для поиска -->
+<form method="GET">
+    {{ filter.form }} <!-- Форму от фильтров за нас сделает django. А вот кнопку, увы придётся делать самому -->
+    <input type="submit" value="Найти">
+</form>
+
+   <hr>
+   {% if posts %}
+       <h4><table>
+           <tr>
+               <td>Заголовок</td>
+               <td>Дата публикации</td>
+               <td>Превью</td>
+               <td>Категория</td>
+           </tr>
+
+           {% for post in filter.qs %}
+           <tr>
+               <td>{{ post.title|censor }}</td>
+               <td>{{ post.dateCreation|date:'d M Y' }}</td>
+               <td>{{ post.text|truncatewords:4|censor }}</td>
+               <td>{% for i in post.postCategory.all %}
+                   {{ i.name }} {% endfor %} </td>
+           </tr>
+           {% endfor %}
+
+       </table></h4>
+   {% else %}
+       <h2>Товаров нет!</h2>
+   {% endif %}
+
+<hr>
+<h1><a href='/news/subscribe/'> Subscribe  </a></h1>
+
+{% endblock content %}

@@ -1,0 +1,57 @@
+2022-07-17 11:52:40,665 - INFO - autoreload - Watching for file changes with StatReloader
+2022-07-17 11:52:49,815 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2022-07-17 11:52:49,843 - INFO - basehttp - "GET /accounts/login/?next=/ HTTP/1.1" 200 1555
+2022-07-17 11:53:27,019 - INFO - autoreload - /home/juliamish/projects/Django — NP/project2/project2/settings.py changed, reloading.
+2022-07-17 12:03:36,158 - INFO - autoreload - Watching for file changes with StatReloader
+2022-07-17 12:03:43,016 - INFO - basehttp - "GET / HTTP/1.1" 200 673
+2022-07-17 12:03:50,195 - INFO - basehttp - "GET /news/ HTTP/1.1" 200 5693
+2022-07-17 12:03:50,280 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-07-17 12:03:50,405 - WARNING - basehttp - "GET /news/assets/favicon.ico HTTP/1.1" 404 179
+2022-07-17 12:04:35,948 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 16323
+2022-07-17 12:04:52,056 - INFO - basehttp - "GET /news/ HTTP/1.1" 200 5693
+2022-07-17 12:04:52,116 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-07-17 12:04:53,631 - INFO - basehttp - "GET /news/search/ HTTP/1.1" 200 10915
+2022-07-17 12:04:53,714 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-07-17 12:04:53,836 - WARNING - basehttp - "GET /news/search/assets/favicon.ico HTTP/1.1" 404 179
+2022-07-17 12:06:34,301 - INFO - basehttp - "GET /news/subscribe/ HTTP/1.1" 200 3811
+2022-07-17 12:06:34,335 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-07-17 12:06:34,435 - WARNING - basehttp - "GET /news/subscribe/assets/favicon.ico HTTP/1.1" 404 179
+2022-07-17 12:06:42,969 - INFO - basehttp - "GET /news/profile/ HTTP/1.1" 200 4192
+2022-07-17 12:06:43,028 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-07-17 12:06:43,125 - WARNING - basehttp - "GET /news/profile/assets/favicon.ico HTTP/1.1" 404 179
+2022-07-17 12:08:48,540 - INFO - autoreload - /home/juliamish/projects/Django — NP/project2/project2/settings.py changed, reloading.
+2022-07-17 12:09:01,824 - INFO - autoreload - Watching for file changes with StatReloader
+2022-07-17 12:09:15,458 - INFO - autoreload - /home/juliamish/projects/Django — NP/project2/project2/settings.py changed, reloading.
+2022-07-17 12:09:44,083 - INFO - autoreload - Watching for file changes with StatReloader
+2022-07-17 12:10:03,259 - INFO - basehttp - "GET /appointments/make_appointment/ HTTP/1.1" 200 800
+2022-07-17 12:10:09,364 - INFO - basehttp - "GET /news/ HTTP/1.1" 200 5693
+2022-07-17 12:10:09,455 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-07-17 12:10:11,526 - INFO - basehttp - "GET /news/edit/40 HTTP/1.1" 200 4817
+2022-07-17 12:10:11,585 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-07-17 12:10:11,672 - WARNING - basehttp - "GET /news/edit/assets/favicon.ico HTTP/1.1" 404 179
+2022-07-17 12:10:15,844 - INFO - basehttp - "POST /news/edit/40 HTTP/1.1" 302 0
+2022-07-17 12:10:15,856 - INFO - basehttp - "GET /news/ HTTP/1.1" 200 5693
+2022-07-17 12:10:15,896 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-07-17 12:10:21,205 - INFO - basehttp - "GET /news/ HTTP/1.1" 200 5693
+2022-07-17 12:10:21,252 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-07-17 12:15:10,588 - INFO - autoreload - /home/juliamish/projects/Django — NP/project2/project2/settings.py changed, reloading.
+2022-07-17 12:15:11,086 - INFO - autoreload - Watching for file changes with StatReloader
+2022-07-17 12:15:17,534 - INFO - autoreload - /home/juliamish/projects/Django — NP/project2/project2/settings.py changed, reloading.
+2022-07-17 12:15:17,924 - INFO - autoreload - Watching for file changes with StatReloader
+2022-07-17 12:15:21,325 - INFO - autoreload - /home/juliamish/projects/Django — NP/project2/project2/settings.py changed, reloading.
+2022-07-17 12:16:18,119 - INFO - autoreload - Watching for file changes with StatReloader
+2022-07-17 12:21:39,718 - INFO - autoreload - /home/juliamish/projects/Django — NP/project2/project2/settings.py changed, reloading.
+2022-07-17 12:21:40,525 - INFO - autoreload - Watching for file changes with StatReloader
+2022-07-17 12:21:44,115 - INFO - autoreload - /home/juliamish/projects/Django — NP/project2/project2/settings.py changed, reloading.
+2022-07-17 12:21:57,516 - INFO - autoreload - Watching for file changes with StatReloader
+2022-07-17 12:22:01,832 - INFO - basehttp - "GET / HTTP/1.1" 200 673
+2022-07-17 12:23:29,641 - INFO - autoreload - /home/juliamish/projects/Django — NP/project2/project2/settings.py changed, reloading.
+2022-07-17 12:23:30,714 - INFO - autoreload - Watching for file changes with StatReloader
+2022-07-17 12:23:34,326 - INFO - autoreload - /home/juliamish/projects/Django — NP/project2/project2/settings.py changed, reloading.
+2022-07-17 12:23:35,100 - INFO - autoreload - Watching for file changes with StatReloader
+2022-07-17 12:23:39,269 - INFO - basehttp - "GET /news/ HTTP/1.1" 200 5697
+2022-07-17 12:23:39,534 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-07-17 12:24:40,093 - INFO - autoreload - /home/juliamish/projects/Django — NP/project2/project2/settings.py changed, reloading.
+2022-07-17 12:24:40,615 - INFO - autoreload - Watching for file changes with StatReloader
+2022-07-17 12:25:03,535 - INFO - autoreload - /home/juliamish/projects/Django — NP/project2/project2/settings.py changed, reloading.
+2022-07-17 12:25:04,147 - INFO - autoreload - Watching for file changes with StatReloader
